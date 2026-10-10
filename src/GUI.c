@@ -1,4 +1,4 @@
-#include "GUI.hpp"
+#include "GUI.h"
 
 void GUI::printLoadingScreen(){
     // Ekran/Yazı ayarlamaları
