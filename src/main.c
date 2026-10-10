@@ -3,9 +3,9 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-#include "Settings.hpp"
-#include "Engine.hpp"
-#include "GUI.hpp"
+#include "Settings.h"
+#include "Engine.h"
+#include "GUI.h"
 
 // Display ayarları
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
@@ -41,7 +41,7 @@ void setup() {
   // Ekranı başlat
   if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
     Serial.println(F("Screen Error"));
-    for (;;); // Don't proceed, loop forever
+    for (;;);
   }
   Serial.println("Screen Start");
 
@@ -77,5 +77,5 @@ void loop() {
     guiEngine.printMenu(selectedGame);
   }
 
-  delay(50); // this speeds up the simulation
+  delay(50);
 }
