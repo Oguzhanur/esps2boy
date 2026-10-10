@@ -3,9 +3,9 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-#include "Settings.h"
-#include "Engine.h"
-#include "GUI.h"
+#include "Settings.hpp"
+#include "Engine.hpp"
+#include "GUI.hpp"
 
 // Display ayarları
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);

@@ -31,8 +31,8 @@ class BaseGame {
 public:
     virtual ~BaseGame() {} // Silici fonksiyon
     // Zorunlu fonksiyonlar
-    virtual void Start(Adafruit_SSD1306* _display) = 0; // 1 kere çalışacak
-    virtual void Loop(Adafruit_SSD1306* _display) = 0;  // Sürekli çalışaca
+    virtual void Start(Adafruit_SSD1306* _display) = 0; // 1 kere
+    virtual void Loop(Adafruit_SSD1306* _display) = 0;  // Sürekli
 };
 
 //---------------------------------------------------

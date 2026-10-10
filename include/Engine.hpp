@@ -12,7 +12,7 @@ private:
     Adafruit_SSD1306* _display;
     
 public:
-    Engine(Adafruit_SSD1306* _display) : _display(_display) {} // Engine'i başlatma
+    Engine(Adafruit_SSD1306* _display) : _display(_display) {} // Engine başlatma
 
     void StartGame(int selected);
 };
